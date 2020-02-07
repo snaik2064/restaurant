@@ -5,6 +5,7 @@ import { FaAlignRight } from "react-icons/fa"
 import styled from "styled-components"
 
 import logo from "../../../images/logo.svg"
+import { styles } from "../../../utils"
 
 export default class NavbarHeader extends Component {
   render() {
@@ -33,7 +34,7 @@ const HeaderWrapper = styled.div`
 
   .toggle-icon {
     font-size: 1.75rem;
-    color: yellow;
+    color: ${styles.colors.mainYellow};
     cursor: pointer;
   }
   @media (min-width: 768px) {
